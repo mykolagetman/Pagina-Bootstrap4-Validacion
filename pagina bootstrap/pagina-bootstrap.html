@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/miestilo.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/datepickercontrol.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/datepickercontrol.css">
+    <style>
+        small {
+            visibility: hidden;
+        }
+        </style>
+        <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+        </script>
+        <script type="text/javascript" src="js/validacion.js"></script>
+    <title>Países de Europa.</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#"><img src="img/logoue.png" width="55"><b>Unión Europea</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#paises">La Unión Europea</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#visitar">¿Qué visitar?</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Añadidos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#conse">La UE por temas</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#info">Leyes de la UE</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                     <a class="nav-link" href="#contacto">Sugerencias y ayuda</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Carousel1.png" class="d-block w-100" alt="Comentario imagen 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p>Bandera de la UE</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carousel2.jpg" class="d-block w-100" alt="Comentario imagen 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p>Países de la UE</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carousel3.jpg" class="d-block w-100" alt="Comentario imagen 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p>Lenguas oficiales</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carousel4.png" class="d-block w-100" alt="Comentario imagen 4">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p>Habitantes en la UE</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carousel5.jpg" class="d-block w-100" alt="Comentario imagen 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p>Superficie de los países de la UE</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </header>
+
+    <section id="jumbo">
+        <div class="jumbotron">
+            <h2 class="display-4">Página de información sobre la Unión Europea.</h2>
+            <p class="lead">Los objetivos de la UE.</p>
+            <hr class="my-4">
+            <a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#modal1">Saber más</a> 
+            <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">Los objetivos de la UE.</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                                <br>-Promover la paz, sus valores y el bienestar de sus ciudadanos;</br>
+                                <br>-Ofrecer libertad, seguridad y justicia sin fronteras interiores;</br>
+                                <br>-Favorecer un desarrollo sostenible basado en un crecimiento económico equilibrado y en la estabilidad de los precios, una economía de mercado altamente competitiva con pleno empleo y progreso social, y la protección del medio ambiente;</br>
+                                <br>-Combatir la exclusión social y la discriminación;</br>
+                                <br>-Promover el progreso científico y tecnológico;</br>
+                                <br>-Reforzar la cohesión económica, social y territorial y la solidaridad entre los Estados miembros;</br>
+                                <br>-Respetar la riqueza de su diversidad cultural y lingüística;</br>
+                                <br>-Establecer una unión económica y monetaria con el euro como moneda.</br>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="paises">
+        <h5 class="display-4"><br>La Unión Europea<br></h5>
+        <div class="card-deck mt-8">
+            <div class="card">
+                <img class="card-img-top" src="img/Cdeck1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">La Unión Europea está formada por 28 Estados miembros.</h5>
+                    <p class="card-text">La UE no siempre fue tan grande como hoy en día: cuando se inició la cooperación económica europea en 1951,
+                    los únicos países participantes eran Alemania, Bélgica, Francia, Italia, Luxemburgo y los Países Bajos.
+                    Con el tiempo, se fueron sumando muchos más países. La Unión cuenta actualmente con 28 países miembros.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/Cdeck2.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Libertad de circulación</h5>
+                    <p class="card-text">Ya no hay controles en las fronteras entre la
+                            mayoría de los países miembros de la UE,
+                            pero si hay controles más estrictos en las fronteras
+                            exteriores,
+                            también hay más cooperación entre las policías de los
+                            países miembros y la 
+                            posibilidad de comprar y llevar consigo
+                            productos de uso personal en los
+                            desplazamientos entre países de la UE.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/Cdeck3.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Estudiar en el extranjero</h5>
+                    <p class="card-text">Cada año, más de 400 000
+                            jóvenes estudian o amplían
+                            sus conocimientos en otros
+                            países europeos gracias al
+                            apoyo del programa Erasmus
+                            + para la educación, la
+                            formación, la juventud y el
+                            deporte.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="visitar">
+        <div class="lugares">
+            <h5 class="display-4"><br>¿Qué países visitar en la UE?<br></h5>
+            <div class="card-deck mt-8">
+                <div class="card">
+                    <img src="img/imagen1.jpg" class="card-img-top rounded" alt="Descripcion 1">
+                    <div class="card-body">
+                        <h5 class="card-title">España</h5>
+                        <p class="card-text">Conocida por su historia, arte, corridas de toros,
+                             flamenco, playas y tantas horas de sol al año, es España,
+                             sin embargo, no sólo esto, sino mucho más.
+                             Esta tierra es y ha sido desde hace milenios uno de los centros
+                             culturales de Europa. Tantas de sus ciudades, 
+                             e incluso los más perdidos enclaves, albergan monumentos 
+                             de excepcional valor histórico y artístico, sin mencionar 
+                             los extraordinarios parajes naturales con que esta añeja 
+                            península cuenta.
+                        </p>
+                        <p class="card-text"><small class="text-muted">Tiene 46 millones de habitantes</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/imagen2.jpg" class="card-img-top" alt="Descripcion 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Alemania</h5>
+                        <p class="card-text">Alemania se caracteriza por poseer una 
+                            cultura extraordinaria y comidas típicas muy ricas.
+                            Alemania es un país de Europa Central que limita con Dinamarca
+                            y Báltico al Norte, al Sur están los países de Suiza y Austria,
+                            por el Este con Polonia y la República Checa y al Oeste limita
+                            con Francia, Luxemburgo, Bélgica y los Países Bajos.
+                            En este territorio donde habitaron mayor número de pensadores,
+                            músicos y hombres ilustres que contribuyeron al desarrollo del
+                            mundo cuenta con atractivos turísticos muy importantes.
+                            La región Baviera destaca con sus majestuosos castillos
+                            repartidos por el Rin y la Selva Negra. Entre las más
+                            populares ciudades de Alemania se pueden nombrar a Berlín,
+                            Hamburgo, Múnich, Colonia y Frankfurt.</p>
+                        <p class="card-text"><small class="text-muted">Tiene 80 millones de habitantes</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/imagen3.jpg" class="card-img-top" alt="Descripcion 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Francia</h5>
+                        <p class="card-text">Francia es un país de Europa que goza
+                            de gran popularidad como destino turístico, tiene entre
+                            sus ciudades grandes atracciones, siendo París, además 
+                            de su ciudad capital, uno de los lugares más visitados.
+                            Francia se caracteriza por la oferta turística que 
+                            presenta, la cual se enfoca en el arte, la historia 
+                            y la gastronomía que mezclado con las distintas manifestaciones
+                            forman un conjunto de experiencias interesantes e inolvidables
+                            para el turista. </p>
+                        <p class="card-text"><small class="text-muted">Tiene 67 millones de habitantes</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="conse">
+        <div class="con">
+            <h5 class="display-4"><br>Añadidos de la UE<br></h5>
+            <div class="container">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Cultura.
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                La cultura en la UE trabaja por conservar el patrimonio cultural común de
+                                Europa y por apoyar y promover las artes y las industrias
+                                creativas europeas. Una serie de iniciativas concretas,
+                                como el Año Europeo del Patrimonio Cultural,
+                                intentan que esta cultura dinámica y diversa sea accesible
+                                para todos.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Educación.
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                La UE apoya a los Estados miembros en sus esfuerzos por ofrecer
+                                la mejor educación y formación posible a sus ciudadanos.
+                                También promueve el multilingüismo en Europa, contribuyendo
+                                a la enseñanza y el aprendizaje de idiomas, fomentando la 
+                                movilidad de los estudiantes, las personas en formación,
+                                los profesores y los jóvenes, y facilitando el intercambio
+                                de información y experiencias.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Como se toman las decisiones en la UE.
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                El principal método de toma de decisiones en la UE se conoce como
+                                procedimiento legislativo ordinario (antes denominado “codecisión”).
+                                Significa que el Parlamento Europeo, directamente elegido, debe 
+                                aprobar la legislación de la UE junto con el Consejo, formado por
+                                los gobiernos de los 28 países miembros.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Tratados en la UE.
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                La Unión Europea se fundamenta en el Estado de Derecho.
+                                Así pues, todas las acciones que emprende se basan en los
+                                tratados, que han sido aprobados voluntaria y democráticamente
+                                por todos sus países miembros. Por tanto, si un ámbito de 
+                                actuación determinado no se cita en ningún tratado, la Comisión
+                                no puede proponer legislación al respecto.
+                            </div>
+                        </div>
+                    </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="info">
+        <div class="container-fluid bg-dark text-light">
+            <h5 class="display-4"><br>Información adiccional sobre la UE.<br></h5>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 text-center">
+                    <dl class="m-5">
+                        <dt class="Display">Dirección:</dt>
+                        <dd>Rue de la Loi/Wetstraat 175, B-1048 Bruxelles/Brussel, Bélgica</dd>
+                        <dt>Teléfono gratuito para llamar desde cualquier lugar de la UE:</dt>
+                        <dt>Los días laborables de 09.00 a 18.00 (hora peninsular española).</dt>
+                        <dd>00 800 6 7 8 9 10 11</dd>
+                        <dt>Redes Sociales de la UE:</dt>
+                        <dd><a href="https://www.facebook.com/europeanparliament?fref=ts" target="blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/company/european-parliament/" target="blank"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://twitter.com/EP_President" target="blank"><i
+                                    class="fab fa-twitter-square"></i></a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-sm-12 col-md-6  embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item p-5" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1259.6990095231254!2d4.381206!3d50.8423134!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c1610ff6a52e8f%3A0x8a48c5f7bd0f0db3!2sCouncil+of+the+European+Union!5e0!3m2!1ses!2ses!4v1559803676318!5m2!1ses!2ses" 
+                        width="500" height="450" frameborder="0" style="border:0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <h5 class="display-4"><br>Sugerencias y ayuda.<br></h5>
+        <div class="container">
+            <form method="POST" action="" onsubmit="return validar();">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre obligatorio"
+                                onchange="quitarError('nombreHelp')">
+                            <small id="nombreHelp" class="form-text text-danger">Campo alfanumérico y
+                                obligatorio</small>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="apellidos" placeholder="Apellidos obligatorios"
+                                onchange="quitarError('apellidosHelp')">
+                            <small id="apellidosHelp" class="form-text text-danger">Campo alfanumérico y
+                                obligatorio</small>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="email" placeholder="Email obligatorio">
+                            <small id="emailHelp" class="form-text text-danger">Campo con formato email y obligatorio</small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <input type="text" class="form-control" id="DPC_edit1_DD/MM/YYYY"
+                                placeholder="Fecha nacimiento obligatoria" onchange="quitarError('fechaNacHelp')">
+                            <small id="fechaNacHelp" class="form-text text-danger">La fecha no puede estar vacía</small>
+                        </div>
+    
+                        <div class="col-3">
+                            <select class="form-control" id="provincia" onchange="quitarError('provinciaHelp')">
+                                <option value="0">Elije tu provincia</option>
+                                <option value="1">Almería</option>
+                                <option value="2">Cádiz</option>
+                                <option value="3">Córdoba</option>
+                                <option value="4">Granada</option>
+                                <option value="5">Huelva</option>
+                                <option value="6">Jaén</option>
+                                <option value="7">Málaga</option>
+                                <option value="8">Sevilla</option>
+                            </select>
+                            <small id="provinciaHelp" class="form-text text-danger">Debes seleccionar una provincia</small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="aceptar"
+                                    onchange="quitarError('aceptarHelp')">
+                                <label class="form-check-label" for="aceptar">
+                                    Acepto la <a href="" data-toggle="modal" data-target="#privacidad">Política de
+                                        privacidad</a></label>
+                                <small id="aceptarHelp" class="form-text text-danger">Es obligatorio marcar esta
+                                    casilla</small>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary" onclick="limpiarResultado()">Enviar</button>
+                        </div>
+                    </div> 
+                </div>
+            </form>
+            <div class="modal fade" id="privacidad" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle"><b>Política de privacidad</b>
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-align-left">
+                        <p>La Unión Europea está comprometida con el respeto a la intimidad del usuario.</p>
+
+                        <p>La política de protección de los particulares con respecto al tratamiento de sus datos personales por las instituciones comunitarias
+                        se basa en el Reglamento (UE) 2018/1725 del Parlamento Europeo y del Consejo, de 23 de octubre de 2018, relativo a la protección de 
+                        las personas físicas en lo que respecta al tratamiento de datos personales por las instituciones, órganos y organismos de la Unión y a
+                        la libre circulación de estos datos y por el que se derogan el Reglamento (CE) n.º 45/2001 y la Decisión n.º 1247/2002/CE.</p>
+                        
+                        <p>Esta política general se aplica a la familia de sitios web institucionales de la Unión Europea dentro del dominio eu. El usuario puede
+                        navegar por la mayoría de las páginas de la UE sin facilitar ninguna información personal, pero en algunos casos esta información es
+                        necesaria para proporcionarle los servicios electrónicos que solicite. Las webs que requieren tal información la tratan según la política
+                        expuesta en el Reglamento mencionado e informan sobre el uso de los datos en sus declaraciones específicas de privacidad.</p>
+                        
+                       <p>A este respecto:</p>
+                        
+                        <p>Para cada servicio electrónico concreto, un responsable determina los fines y medios del tratamiento de los datos personales y asegura la conformidad del servicio con la política de privacidad.
+                        En cada institución, un responsable de protección de datos garantiza que se apliquen las disposiciones del Reglamento y aconseja a los demás responsables 
+                        sobre el cumplimiento de sus obligaciones (artículo 24 del Reglamento).
+                        Para todas las instituciones, el Supervisor Europeo de Protección de Datos actúa como autoridad supervisora independiente (artículos 41 a 45 del Reglamento).
+                        La familia de sitios web institucionales de la Unión Europea, en el dominio eu, ofrece enlaces a webs de terceros. Puesto que no se ejerce control sobre estas 
+                        últimas, le sugerimos leer atentamente sus prácticas en materia de privacidad.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                            data-dismiss="modal">Aceptar</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    
+    </body>
+    
+    </html>
+
+
+
+
+
